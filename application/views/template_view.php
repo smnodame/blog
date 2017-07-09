@@ -3,6 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
+
+    <?php
+        if(isset($import_script)) {
+            include_once 'application/views/scripts/'.$import_script;
+        }
+     ?>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.min.csss">
