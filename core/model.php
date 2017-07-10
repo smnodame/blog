@@ -14,7 +14,7 @@ class Model
         $servername = "localhost";
         $username = "root";
         $password = "secret";
-        $database = "docter";
+        $database = "blog";
         $port = "3307";
         // Create connection
         $this->conn = mysqli_connect($servername, $username, $password, $database, $port);

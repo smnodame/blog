@@ -32,7 +32,6 @@ class Route
         $action_name = 'action_'.$action_name;
 
         // load file with model
-
         $model_file = strtolower($model_name).'.php';
         $model_path = "application/models/".$model_file;
         if(file_exists($model_path))
@@ -72,10 +71,9 @@ class Route
 
     function ErrorPage404()
     {
-//        $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
-//        header('HTTP/1.1 404 Not Found');
-//        header("Status: 404 Not Found");
-//        header('Location:'.$host.'404');
-        echo "<h1> Page not found! </h1>";
+       header('HTTP/1.1 404 Not Found');
+       header("Status: 404 Not Found");
+       header('Location:'.$host.'404');
+       echo "<h1> Page not found! </h1>";
     }
 }

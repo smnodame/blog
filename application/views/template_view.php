@@ -6,7 +6,7 @@
 
     <?php
         if(isset($import_script)) {
-            include_once 'application/views/scripts/'.$import_script;
+            include_once 'application/views/scripts/'.$import_script.'/index.php';
         }
      ?>
 
@@ -17,9 +17,9 @@
 </head>
 <body>
     <?php include_once 'application/views/layouts/header.php' ?>
-    <div class="container" style="margin-top: 30px">
+    <div class="container" style="margin-top: 30px; margin-bottom: 20px">
         <div class="columns">
-            <div class="column is-8 is-offset-2">
+            <div class="column is-10 is-offset-1">
                 <?php include 'application/views/'.$content_view; ?>
             </div>
         </div>
